@@ -10,7 +10,8 @@
 </head>
 <body class="container">
     <!--header-->
-    <h2>X's Turn</h2>
+    <h1>Tic-Tac-Toe</h1>
+    <h2>Player <span class="display-player playerX">X</span>'s turn</h2>
 
     <!--board-->
     <div class="grid">
@@ -30,11 +31,13 @@
         <button class="btn btn-primary" id="restart">Restart Game</button>
     </div>
 
-    <div id="win-alert"></div>
+    <!--win alert-->
+    <h2 class="display announcer alert alert-success hide"></h2>
 
     <!--required scripts-->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="index.js"></script>
 </body>
 </html>
