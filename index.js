@@ -109,11 +109,12 @@
         announce(TIE);
     }
 
-    //displays the winner and announcement alert
+    //displays the winner and announcement alert and changes the color of the alert depending on win
+    //or tie
     const announce = (type) => {
         switch(type){
             case PLAYERO_WON:
-                announcer.innerHTML = 'Player <span class="playerO">O</span> Won!';
+                announcer.innerHTML = 'Player O Won!';
 
                 if (announcer.classList.contains('alert-secondary'))
                 {
@@ -122,7 +123,7 @@
                 }
                 break;
             case PLAYERX_WON:
-                announcer.innerHTML = 'Player <span class="playerX">X</span> Won!';
+                announcer.innerHTML = 'Player X Won!';
 
                 if (announcer.classList.contains('alert-secondary'))
                 {
